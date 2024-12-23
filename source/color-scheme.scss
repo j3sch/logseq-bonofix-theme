@@ -21,15 +21,6 @@ $blue_light12: #106bc6; // (fixed)
 ************** Root ***********
 *******************************/
 
-:root {
-  --ls-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
-    "Segoe UI Emoji", "Segoe UI Symbol";
-  // --ls-main-content-max-width: 840px;
-  --ls-tag-text-opacity: 0.6;
-  --ls-tag-text-hover-opacity: 0.8;
-  --ls-page-title-size: 36px;
-}
-
 /* **************************
 ****** Common Fallbacks *****
 *****************************/
@@ -62,8 +53,8 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
   --bf-codeblock-background-color: #313238;
 
-  --bf-external-link-color: #6cbcfa;;
-  --bf-external-link-hover-color: #99ccfd;
+  --bf-external-link-color: #0391FF;;
+  --bf-external-link-hover-color: #7cb8ff;
 
   // query builder
   --bf-query-clause-border-color: var(--lx-accent-06);
