@@ -1,0 +1,57 @@
+/*****************************************
+  White Theme
+*****************************************/
+
+html[data-theme="light"] {
+  #left-bar {
+    nav > a,
+    svg {
+      color: var(--ls-priamary-text-color);
+    }
+    #repo-name {
+      opacity: 1;
+      height: 22px;
+      transform: translateY(-1px);
+    }
+  }
+  // #main-content-container {
+  //   .cp__sidebar-main-content:before {
+  //     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  //   }
+  // }
+  .content {
+    .external-link {
+      border-bottom: 0.05em solid rgba(55, 53, 47, 0.25);
+    }
+    .block-ref {
+      background: rgba(40, 142, 111, 0.1);
+      border-bottom-color: rgba(40, 142, 111, 0.3);
+    }
+    .marker-switch {
+      color: #504d47;
+      background: #f3f2ed;
+      opacity: 1;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  // card
+  .references-blocks-item,
+  .cp__right-sidebar-inner {
+    div[data-refs-self*='"card"'] > .block-children-container {
+      background: var(--ls-primary-background-color);
+    }
+  }
+
+  // block-property
+  .cp__right-sidebar,
+  .references-blocks-item {
+    --bf-codeblock-background-color: #f3f1ed;
+
+    .marker-switch {
+      background: #e8e7e3;
+    }
+  }
+}

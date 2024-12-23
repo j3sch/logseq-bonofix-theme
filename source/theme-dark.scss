@@ -1,0 +1,113 @@
+/*****************************************
+  Dark Theme
+*****************************************/
+
+html[data-theme="dark"] {
+  // v0.10.7
+
+  .cp__header {
+    .dropdown-wrapper {
+      a,
+      span {
+        opacity: 1; // fix opacity in dropdown menu when in darkmode
+      }
+    }
+  }
+  .left-sidebar-inner {
+    a.item {
+      color: var(--ls-primary-text-color);
+    }
+  }
+
+  .content {
+    b,
+    strong {
+      font-weight: bolder;
+      color: var(--bf-strong-text-color);
+    }
+    a {
+      &.tag {
+        opacity: 0.83;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.external-link {
+        b,
+        strong {
+          color: var(--bf-external-link-color);
+          &:hover {
+            color: var(--bf-external-link-hover-color);
+          }
+        }
+      }
+    }
+
+    mark {
+      background: #766101;
+      color: var(--ls-primary-text-color);
+    }
+    .external-link {
+      border-bottom: 0.05em solid rgba(255, 255, 255, 0.4);
+    }
+
+    .block-ref {
+      background: #1f535878;
+      border-bottom-color: #53d2d280;
+    }
+    .marker-switch {
+      color: var(--ls-primary-text-color);
+      background: #444;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    svg.add-button > .circle {
+      fill: var(--ls-block-bullet-color, #394b59);
+    }
+  }
+
+  .cp__right-sidebar,
+  .references-blocks-item {
+    --ls-page-properties-background-color: var(--ls-tertiary-background-color);
+  }
+
+  // Fix color scale in dark mode;
+  .menu-links-wrapper,
+  .ui__modal-panel,
+  .menu-link {
+    background-color: var(--ls-secondary-background-color);
+  }
+
+  .menu-link:hover,
+  .menu-link.chosen {
+    background-color: var(--ls-menu-hover-color);
+  }
+
+  .ui__modal-overlay div {
+    background: var(--ls-primary-background-color);
+  }
+  .tippy-tooltip,
+  .tippy-wrapper {
+    background-color: var(--ls-secondary-background-color);
+  }
+
+  // v0.10.7
+  &[data-color="logseq"] {
+    .cp__cmdk > .hints,
+    .ui__modal-panel,
+    .tippy-tooltip,
+    .form-input {
+      border-color: var(--ls-border-color);
+    }
+
+    .ui__button.as-ghost:hover {
+      background-color: #ffffff22;  
+    }
+
+    .cp__themes-installed .it.is-active,
+    .cp__themes-installed .it:hover {
+      background-color: var(--ls-table-tr-even-background-color);
+    }
+  }
+}
